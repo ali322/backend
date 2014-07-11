@@ -1,0 +1,42 @@
+<?php
+return array(
+    'action'=>Yii::app()->createUrl('webshop/goodscate/loadData'),
+    'elements'=>array(
+        'cat_name'=>array(
+            'type'=>'text',
+            'maxlength'=>12,
+            'class'=>'s_row',
+        ),
+        'parent_id'=>array(
+            'type'=>'ext.easyui.EasyuiCombotree',
+            'url'=>Yii::app()->createUrl('webshop/goodsCate/remoteData'),
+            'attribute'=>'parent_id',
+            's_class'=>'s_row',
+            'id'=>'s_view_ct',
+        ),
+        'cat_desc'=>array(
+            'type'=>'text',
+            'maxlength'=>12,
+            'class'=>'s_row',
+        ),
+        'sort_order'=>array(
+            'type'=>'text',
+            'maxlength'=>12,
+            'class'=>'s_row',
+        ),
+        'level'=>array(
+            'type'=>'text',
+            'maxlength'=>12,
+            'class'=>'s_row',
+        ),
+    ),
+    
+    'buttons'=>array(
+        'login'=>array(
+            'type'=>'button',
+            'label'=>Yii::t('easyui','Search'),
+            'id'=>'search_form_button',
+        )
+    )
+);
+?>

@@ -1,0 +1,33 @@
+<?php $this->widget('ext.easyui.EasyuiGrid',array(
+		'title'=>Yii::t('project','List Logs'),
+		'url'=>Yii::app()->createUrl('logs/loadData'),
+		'model'=>'Logs',
+		'idField'=>'id',
+		'htmlOptions'=>array(
+			'method'=>'POST',
+			'width'=>1250,
+			'height'=>630,
+		//	'idField'=>'good_id',
+			'fitColumns'=>true,
+			'nowrap'=>false,
+			'rownumbers'=>true,
+			'showFooter'=>true,
+			'pagination'=>true,
+			'rownumbers'=>false,
+                        'singleSelect'=>false,
+		),
+		'toolbar_show'=>array(
+		//	'add'=>array('href'=>Yii::app()->createUrl('brand/create'),'text'=>'添加品牌'),
+		//	'delete'=>array('href'=>Yii::app()->createUrl('brand/delete'),'text'=>'删除品牌'),
+			'edit'=>array('href'=>Yii::app()->createUrl('logs/update')),
+			'view'=>array('href'=>Yii::app()->createUrl('logs/view')),
+			'search'=>array('href'=>Yii::app()->createUrl('logs/loadData'),'text'=>'搜索日志','formTpl'=>'searchLog'),
+                 //       'multiple'=>array('href'=>Yii::app()->createUrl('brand/updateBatch'),'text'=>'批量更改','formTpl'=>'multipleBrand'),
+		),
+		'columns'=>array(
+                        array('field'=>'id','title'=>Logs::model()->getAttributeLabel('id'),'width'=>80,'checkbox'=>true),
+                        array('field'=>'user_name','title'=>Logs::model()->getAttributeLabel('user_name'),'width'=>80),
+			array('field'=>'actions','title'=>Logs::model()->getAttributeLabel('actions'),'width'=>100,'search'=>true),
+                        array('field'=>'add_time','title'=>Logs::model()->getAttributeLabel('add_time'),'width'=>80,'search'=>true),
+		),
+	));?>

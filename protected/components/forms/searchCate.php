@@ -1,0 +1,30 @@
+<?php
+return array(
+    'action'=>Yii::app()->createUrl('cate/loadData'),
+    'elements'=>array(
+        'cat_name'=>array(
+            'type'=>'text',
+            'maxlength'=>12,
+            'class'=>'s_row',
+        ),
+        'cat_desc'=>array(
+            'type'=>'text',
+            'maxlength'=>12,
+            'class'=>'s_row',
+        ),
+        'sort_order'=>array(
+            'type'=>'text',
+            'maxlength'=>12,
+            'class'=>'s_row',
+        ),
+    ),
+    
+    'buttons'=>array(
+        'login'=>array(
+            'type'=>'button',
+            'label'=>Yii::t('easyui','Search'),
+            'id'=>'search_form_button',
+        )
+    )
+);
+?>

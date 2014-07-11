@@ -1,0 +1,35 @@
+<?php $this->widget('ext.easyui.EasyuiGrid',array(
+		'title'=>Yii::t('project','List Pics'),
+		'url'=>Yii::app()->createUrl('pic/loadData'),
+		'model'=>'Pic',
+		'idField'=>'pic_id',
+		'htmlOptions'=>array(
+			'method'=>'POST',
+			'width'=>1250,
+			'height'=>630,
+		//	'idField'=>'good_id',
+			'fitColumns'=>true,
+			'nowrap'=>false,
+			'rownumbers'=>true,
+			'showFooter'=>true,
+			'pagination'=>true,
+			'rownumbers'=>false,
+                        'singleSelect'=>false,
+		),
+		'toolbar_show'=>array(
+			'add'=>array('href'=>Yii::app()->createUrl('pic/create'),'text'=>'添加图片'),
+			'delete'=>array('href'=>Yii::app()->createUrl('pic/delete'),'text'=>'删除图片'),
+			'edit'=>array('href'=>Yii::app()->createUrl('pic/update')),
+			'view'=>array('href'=>Yii::app()->createUrl('pic/view')),
+			'search'=>array('href'=>Yii::app()->createUrl('pic/loadData'),'text'=>'搜索图片','formTpl'=>'searchPic'),
+                   //     'multiple'=>array('href'=>Yii::app()->createUrl('pic/updateBatch'),'text'=>'批量更改','formTpl'=>'multipleCate'),
+		),
+		'columns'=>array(
+                        array('field'=>'pic_id','title'=>Yii::t('project',Pic::model()->getAttributeLabel('pic_id')),'width'=>80,'checkbox'=>true),
+                      //  array('field'=>'good_id','title'=>Yii::t('project',Pic::model()->getAttributeLabel('good_id')),'width'=>80),
+			array('field'=>'pic_name','title'=>Yii::t('project',Pic::model()->getAttributeLabel('pic_name')),'width'=>100,'search'=>true),
+                        array('field'=>'pic_desc','title'=>Yii::t('project',Pic::model()->getAttributeLabel('pic_desc')),'width'=>80,'search'=>true),
+                        array('field'=>'pic_path','title'=>Yii::t('project',Pic::model()->getAttributeLabel('pic_path')),'width'=>180,'search'=>true),
+		),
+	));?>
+

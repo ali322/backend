@@ -1,0 +1,25 @@
+/* 
+    Document   : customize for easyui
+    Created on : 2012-3-12, 14:46:21
+    Author     : alichen
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/*easyui-datagrid*/
+#my_tb .my_tb_f{margin-bottom:3px;clear:both;}
+#my_tb .my_tb_f .l-btn{float:left;}
+#export_submenu{width:100px;}
+.panel-title{text-align:left;}
+
+.s_form_wrapper{padding:6px;}
+.s_form_wrapper .row{clear:both;height:26px;line-height:26px;}
+.s_form_wrapper .row label{float:left;width:50px;height:26px;line-height:26px;}
+.s_form_wrapper .row .s_row{max-width:180px;}
+.s_form_wrapper .row .check_row{margin-top:6px;}
+

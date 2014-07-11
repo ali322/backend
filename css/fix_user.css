@@ -1,0 +1,130 @@
+/* 
+    Document   : fix_user
+    Created on : 2011-11-28, 15:08:51
+    Author     : alichen
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+.login_box .form{width:470px;overflow:hidden;}
+.login_box .form .row{clear:both;width:470px;overflow:hidden;padding:5px 0;}
+.login_box .form .row label{width:120px;line-height:23px;height:23px;display:block;float:left;/*_line-height:24px;_height:24px;*/}
+.login_box .form .row .errorMessage{float:left;color:#FD1314;line-height:23px;height:23px;padding-left:3px;width:147px;overflow:hidden;}
+.login_box .form .row input{display:block;float:left;/*padding-left:12px;*/width:195px;}
+.login_box .form .row .hint{width:350px;padding-left:120px;color:#767475;height:20px;line-height:20px;overflow:hidden;}
+.login_box .form .row .hint a{color:#1A66B3;}
+.login_box .form .row #Profile_consignee_ext{width:450px;height:17px;}
+
+.login_box .form .verify_row{height:110px;position:relative;}
+.login_box .form .verify_row .hint{clear:both;float:none;}
+.login_box .form .verify_row .verify_img a{color:#1A66B3;}
+.login_box .form .verify_row .verify_img{height:67px;width:350px;padding-left:120px;/*clear:right;*//*position:absolute;top:80px;left:0;*/}
+.login_box .form .verify_row .verify_img img{display:block;width:120px;height:50px;border:1px solid #E2E2E2;}
+
+.login_box{background:url(../images/user/login_box_bg.gif) repeat-x 0 0 #EDEDED;width:968px;padding-bottom:20px;}
+.login_inner_box{width:910px;padding-left:58px;background:url(../images/user/login_box_ad.gif) no-repeat 99% 50%;}
+.login_inner_box h1{padding:12px 0;margin:0;}
+.login_box .form .note{margin-bottom:8px;}
+.login_inner_box .form span.required{color:#FD1314;}
+.login_box .form .submit{padding:8px 0px 8px 120px;width:350px;}
+.login_box .form .agree_serv,.login_box .form .rememberMe{padding-left:120px;width:350px;height:18px;line-height:18px;overflow:hidden;}
+.login_box .form .rememberMe label{height:18px;line-height:18px;_height:24px;_line-height:24px;}
+.login_box .form .agree_serv input,.login_box .form .rememberMe input{width:12px;height:12px;margin:3px;}
+.login_inner_box .form .submit input{border:none;padding:0;margin:0;height:38px;width:120px;background:url(../images/user/login_reg_btn.gif) no-repeat 0 0;font-size:0;}
+.login_inner_box .form .login_submit input{background:url(../images/user/login_btn.gif) no-repeat 0 0;}
+
+/*帮助中心*/
+.mine_wrap{background:#FFF;padding:12px 10px 12px 10px;width:960px;clear:both;overflow:hidden;}
+.mine_wrap .mine_lft{float:left;display:block;width:190px;background:url(../images/user/h_c_lft_title.png) no-repeat 0 0;padding-top:50px;border:1px solid #DDD;}
+.mine_wrap .mine_rgt{float:left;display:block;width:753px;padding-left:15px;}
+
+.mine_wrap .mine_lft .lft_bar{width:190px;overflow:hidden;}
+.mine_wrap .mine_lft h3{height:30px;line-height:30px;text-align:left;background:#F5F5F5;font-weight:bold;font-size:13px;width:178px;padding-left:12px;overflow:hidden;margin-bottom:0;border-top:1px solid #DDD;border-bottom:1px solid #DDD;}
+.mine_wrap .mine_lft ul{margin:0;padding:0;display:block;padding:6px 0;width:172px;padding-left:18px;}
+.mine_wrap .mine_lft ul li{list-style:square inside;width:172px;overflow:hidden;color:#7A7A7A;height:20px;line-height:20px;}
+.mine_wrap .mine_lft ul li a{color:#7A7A7A}
+
+.mine_wrap .mine_rgt p{margin-bottom:12px;}
+.mine_wrap .mine_rgt p.h_c_rgt_title{background:url(../images/user/h_c_rgt_title.png) repeat-x 0 0;height:43px;line-height:43px;font-size:15px;font-weight:bold;width:740px;padding-left:13px;}
+.mine_wrap .mine_rgt p.h_c_rgt_remind{height:30px;line-height:30px;font-size:13px;background:#F5F5F5;}
+.mine_wrap .mine_rgt p.h_c_rgt_hint{background:url(../images/user/h_c_rgt_center.png) no-repeat 0 0;width:753px;height:44px;}
+
+.mine_wrap .mine_rgt .h_c_rgt_main{background:#F5F5F5;border:1px solid #DDD;width:751px;clear:both;overflow:hidden;padding:12px 0;margin-bottom:12px;}
+.mine_wrap .mine_rgt .h_c_rgt_main .h_c_rgt_shortcut{width:351px;border-right:1px dashed #DDD;float:left;overflow:hidden;}
+.mine_wrap .mine_rgt .h_c_rgt_main .h_c_rgt_shortcut dl{margin:0;padding:0;display:block;width:321px;padding:6px 15px;clear:both;overflow:hidden;text-align:left;}
+.mine_wrap .mine_rgt .h_c_rgt_main .h_c_rgt_shortcut dl dt{font-weight:bold;width:321px;float:left;display:block;text-align:left;}
+.mine_wrap .mine_rgt .h_c_rgt_main .h_c_rgt_shortcut dl dd{margin:0;float:left;display:block;height:15px;padding:3px 0 4px 0;}
+.mine_wrap .mine_rgt .h_c_rgt_main .h_c_rgt_shortcut dl dd a{color:#595959;padding:0 6px;border-right:1px solid #595959;display:block;height:15px;line-height:15px;float:left;}
+.mine_wrap .mine_rgt .h_c_rgt_main .h_c_rgt_qa{width:399px;float:left;overflow:hidden;}
+.mine_wrap .mine_rgt .h_c_rgt_main .h_c_rgt_qa h3{width:387px;padding-left:12px;font-weight:bold;color:#C30101;font-size:12px;padding-top:6px;margin:0;}
+.mine_wrap .mine_rgt .h_c_rgt_main .h_c_rgt_qa ul{margin:0;padding:6px 15px;display:block;}
+.mine_wrap .mine_rgt .h_c_rgt_main .h_c_rgt_qa ul li{height:25px;line-height:25px;color:#595959;padding-left:12px;width:387px;list-style:none;}
+.mine_wrap .mine_rgt .h_c_rgt_main .h_c_rgt_qa ul li a{color:#595959;}
+
+.mine_wrap .mine_rgt .h_c_rgt_contact{background:#F6F6F6;width:753px;clear:both;overflow:hidden;padding:12px 0;margin-bottom:12px;}
+.mine_wrap .mine_rgt .h_c_rgt_contact dl{display:block;margin:0;}
+.mine_wrap .mine_rgt .h_c_rgt_contact dl dd{display:block;float:left;width:326px;padding:12px 25px;height:91px;margin:0;}
+.mine_wrap .mine_rgt .h_c_rgt_contact dl dd div{width:254px;height:91px;border:1px solid #D1D1D1;padding-left:70px;padding-top:12px;}
+.mine_wrap .mine_rgt .h_c_rgt_contact dl dd div.h_c_rgt_qq{background:url(../images/user/h_c_rgt_qq.gif) no-repeat 13px 50% #FFF;}
+.mine_wrap .mine_rgt .h_c_rgt_contact dl dd div.h_c_rgt_email{background:url(../images/user/h_c_rgt_email.gif) no-repeat 13px 50% #FFF;}
+.mine_wrap .mine_rgt .h_c_rgt_contact dl dd div.h_c_rgt_phone{background:url(../images/user/h_c_rgt_phone.gif) no-repeat 13px 50% #FFF;}
+.mine_wrap .mine_rgt .h_c_rgt_contact dl dd div.h_c_rgt_post{background:url(../images/user/h_c_rgt_post.gif) no-repeat 13px 50% #FFF;}
+.mine_wrap .mine_rgt .h_c_rgt_contact dl dd div h3{margin:0;height:25px;line-height:25px;}
+.mine_wrap .mine_rgt .h_c_rgt_contact dl dd div p{margin:0;height:22px;line-height:22px;}
+
+.mine_wrap .mine_rgt .h_c_rgt_ads{width:753px;clear:both;overflow:hidden;}
+.mine_wrap .mine_rgt .h_c_rgt_ads h2{margin:0;height:25px;width:753px;background:url(../images/user/h_c_rgt_ads_title.gif) no-repeat 13px 50% #FFF;border-bottom: 1px solid #666;margin-bottom:12px;}
+.mine_wrap .mine_rgt .h_c_rgt_ads h2 div{height:25px;width:753px;text-align:right;}
+.mine_wrap .mine_rgt .h_c_rgt_ads ul{display:block;margin:0;padding:0;overflow:hidden;clear:both;width:753px;height:157px;border:1px solid #CDCBCC;}
+.mine_wrap .mine_rgt .h_c_rgt_ads ul li{float:left;display:block;width:244px;height:151px;padding:3px;}
+.mine_wrap .mine_rgt .h_c_rgt_ads ul li a{display:block;width:242px;height:149px;border:1px solid #CECACB;overflow:hidden;}
+
+/*个人中心*/
+.mine_wrap .profile_lft{background:url(../images/user/p_lft_title.png) no-repeat 0 0;}
+.mine_wrap .mine_rgt .profile_info{width:751px;clear:both;overflow:hidden;border:1px solid #DDD;background:#FFF;height:122px;}
+.mine_wrap .mine_rgt .profile_info .info_avatar,.mine_wrap .mine_rgt .profile_info .info_content{display:block;float:left;display:block;height:100%;}
+.mine_wrap .mine_rgt .profile_info .info_avatar{width:97px;padding:12px 27px;}
+.mine_wrap .mine_rgt .profile_info .info_avatar .info_head{width:96px;height:96px;border:1px solid #D1D1D1;}
+.mine_wrap .mine_rgt .profile_info .info_content{width:600px;color:#656565;padding:37px 0;}
+.mine_wrap .mine_rgt .profile_info .info_content p{margin-bottom:4px;height:20px;line-height:20px;width:590px;padding:0 10px;padding-left:0;clear:both;overflow:hidden;}
+.mine_wrap .mine_rgt .profile_info .info_content p span{display:block;float:left;width:295px;}
+.mine_wrap .mine_rgt .profile_info .info_content .info_visit_reg,.mine_wrap .mine_rgt .profile_info .info_content .recharge_online{color:#E4004F;}
+.mine_wrap .mine_rgt .profile_info .info_content .info_visit_reg a{color:#FFF;margin:0 3px;background:url("../images/user/rpt.png") repeat-x scroll 0 -214px #525252;padding:2px 15px 3px 15px;height:22px;line-height:14px;}
+
+.mine_wrap .mine_rgt .info_remind{height:25px;line-height:25px;border-top:1px solid #E1E1E1;border-bottom:1px solid #E1E1E1;margin: 12px 0;width:740px;padding-left:13px;color:#656565;}
+.mine_wrap .mine_rgt .info_remind font{padding:0 6px;color:#E4004F;}
+.mine_wrap .mine_rgt .last_visit{height:25px;line-height:25px;width:753px;color:#656565;}
+
+/*订单页面*/
+.order_wrap{margin-bottom:12px;width:753px;}
+.cl_1{width:147px;}
+.cl_2{width:96px;}
+.cl_3{width:96px;}
+.cl_4{width:60px;}
+.cl_5{width:60px;}
+.cl_6{width:140px;}
+.cl_7{width:140px;}
+.order_wrap .list-view .summary{margin-top:12px;}
+.cl_1,.cl_2,.cl_3,.cl_4,.cl_5,.cl_6,.cl_7{display:block;height:26px;line-height:26px;float:left;text-align:center;position:relative;}
+.order_wrap .order_title{clear:both;width:751px;overflow:hidden;border:1px solid #DDD;font-weight:bold;background:#F9F9F9;}
+.order_wrap .items .view{clear:both;width:751px;overflow:hidden;border-bottom:1px solid #DDDDDD;height:26px;line-height:26px;}
+.order_wrap .order_title .spe_line{width:1px;height:26px;color:#DDD;position:absolute;right:0;top:0;padding:0 3px;}
+.order_wrap .items .view .view_operate a,.order_wrap .items .view .view_order_sn a{color:#1A66B3;}
+
+/*编辑个人资料页面*/
+.mine_wrap .mine_rgt .login_box{background:#FFF;width:753px;overflow:hidden;}
+.mine_rgt .form{width:705px;}
+.mine_rgt .form .row{clear:both;overflow:hidden;}
+.mine_rgt .form .row label{width:70px;line-height:23px;height:23px;display:block;float:left;_line-height:24px;_height:24px;}
+.mine_rgt .form .row input{display:block;float:left;}
+.mine_rgt .form .row .errorMessage{float:left;padding-left:12px;}
+.mine_rgt .form .row .hint{float:left;padding-left:12px;}
+.mine_rgt .form .submit{padding-left:0;}
+.mine_rgt .form .submit input{width:120px;height:30px;line-height:30px;color:#FFF;font-size:13px;cursor:pointer;border:none;background:url("../images/user/png-btns.png") no-repeat scroll 0 -40px ;}
+
+/*咨询列表*/
+.qa_wrap{background:#FFF;}

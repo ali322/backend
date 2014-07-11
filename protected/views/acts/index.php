@@ -1,0 +1,33 @@
+<?php $this->widget('ext.easyui.EasyuiGrid',array(
+		'title'=>Yii::t('project','List Acts'),
+		'url'=>Yii::app()->createUrl('acts/loadData'),
+		'model'=>'Acts',
+		'idField'=>'act_id',
+		'htmlOptions'=>array(
+			'method'=>'POST',
+			'width'=>1028,
+			'height'=>600,
+		//	'idField'=>'good_id',
+			'fitColumns'=>true,
+			'nowrap'=>false,
+			'rownumbers'=>true,
+			'showFooter'=>true,
+			'pagination'=>true,
+			'rownumbers'=>false,
+		),
+		'toolbar_show'=>array(
+			'add'=>array('href'=>Yii::app()->createUrl('acts/create'),'text'=>'添加活动'),
+			'delete'=>array('href'=>Yii::app()->createUrl('acts/delete'),'text'=>'删除活动'),
+			'edit'=>array('href'=>Yii::app()->createUrl('acts/update')),
+			'view'=>array('href'=>Yii::app()->createUrl('acts/view')),
+                        'search'=>array('href'=>Yii::app()->createUrl('acts/loadData'),'text'=>'搜索活动','formTpl'=>'searchActs'),
+                        'multiple'=>array('href'=>Yii::app()->createUrl('acts/updateBatch'),'text'=>'批量更改','formTpl'=>'multipleActs'),
+		//	'search'=>array('href'=>Yii::app()->createUrl('acts/loadData').'formTpl'=>'searchGoods'),
+		),
+		'columns'=>array(
+			array('field'=>'act_id','title'=>Yii::t('project',Acts::model()->getAttributeLabel('act_id')),'width'=>80,'checkbox'=>true),
+			array('field'=>'act_name','title'=>Yii::t('project',Acts::model()->getAttributeLabel('act_name')),'width'=>80,),
+                        array('field'=>'begin_time','title'=>Yii::t('project',Acts::model()->getAttributeLabel('begin_time')),'width'=>80),
+			array('field'=>'end_time','title'=>Yii::t('project',Acts::model()->getAttributeLabel('end_time')),'width'=>80),
+		),
+	));?>
